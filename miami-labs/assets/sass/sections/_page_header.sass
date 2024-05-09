@@ -1,0 +1,87 @@
+.hero_index_up
+    margin-top: -60px
+.page_header_section
+    position: relative
+    .page_index_area
+        margin-bottom: 50px
+        padding-bottom: 30px
+        border-bottom: 1px solid $seconday-color
+        margin-top: 30px
+        .page_index
+            width: 80px
+            height: 80px
+            text-align: center
+            border: 1px solid $seconday-color
+            border-radius: 50%
+            color: $seconday-color
+            font-size: 4em
+            line-height: 140%
+    .page_header_container
+        background-size: cover
+        background-position: 50% 0%
+        padding-bottom: 150px
+        padding-top: 80px
+        .center-area
+            position: relative
+        h1
+            color: $light-color
+            margin-bottom: 15px
+            font-size: 120px
+            line-height: 125px
+            position: relative
+            width: 50vw
+            z-index: 1
+        .header_title
+            h1
+                font-weight: 700
+                font-size: 44px
+                line-height: 128.5%
+                max-width: 340px
+                margin: 0 auto
+                margin-bottom: 100px
+            h6
+                position: relative
+                z-index: 1
+                font-size: 16px
+                line-height: 19px
+                color: $light-color
+        .header_image
+            img
+                width: 100%
+                object-fit: cover
+                max-height: 600px
+        .page_header_content
+            font-weight: 600
+            font-size: 18px
+            line-height: $lh-5
+            margin-bottom: 45px
+            max-width: 590px
+            p
+                color: $light-color
+                font-family: $font-texts
+                font-weight: 400
+                font-size: 14px
+                line-height: 22px
+        a
+            +link-light
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+        .read_more_link
+            display: inline-block
+            position: relative
+            color: $light-color
+            +btn-option
+            &:hover
+                +btn-option-hover
+            &::after
+                font-family: bootstrap-icons
+                content: "\f138"
+                margin-left: 10px
+                top: 3px
+                position: relative
+            img
+                margin-left: 15px
+        .cta_btn
+            color: #fff !important

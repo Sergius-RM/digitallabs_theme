@@ -1,0 +1,375 @@
+@font-face
+    font-family: 'Inter'
+    src: url('/wp-content/themes/miami-labs/assets/fonts/Inter/Inter-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Work Sans'
+    src: url('/wp-content/themes/miami-labs/assets/fonts/Work_Sans/WorkSans-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Inter SemiBold'
+    src: url('/wp-content/themes/miami-labs/assets/fonts/Inter/Inter-SemiBold.ttf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Roc Grotesk'
+    src: url('/wp-content/themes/miami-labs/assets/fonts/Roc_Grotesk/Roc-Grotesk-Medium.otf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Roc Grotesk Light'
+    src: url('/wp-content/themes/miami-labs/assets/fonts/Roc_Grotesk/Roc-Grotesk-Light.otf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Roc Grotesk Bold'
+    src: url('/wp-content/themes/miami-labs/assets/fonts/Roc_Grotesk/Roc-Grotesk-Bold.otf')
+    font-weight: normal
+    font-style: normal
+
+body
+    color: $white-color
+    font-family: $brother-fonts
+    font-size: $rootSize
+    line-height: $lh-p
+    background: $grey-90
+    position: relative
+    // &::-webkit-scrollbar
+    //     width: 4px !important
+    // &::-webkit-scrollbar-track
+    //     background: #f1f1f1
+    // &::-webkit-scrollbar-thumb
+    //     background: #888
+body > section
+    position: relative
+    z-index: 5
+.body-multi-bg
+    position: absolute
+    width: 100%
+    height: 100%
+    overflow: hidden
+    top: 0
+
+.body-patch-1
+    width: 130vh
+    height: 130vh
+    right: -30vh
+    top: 0
+.body-patch-2
+    width: 150vh
+    height: 150vh
+    left: -100vh
+    top: 200vh
+.body-patch-3
+    width: 150vh
+    height: 150vh
+    right: -100vh
+    top: 450vh
+.body-patch-4
+    width: 150vh
+    height: 150vh
+    left: -100vh
+    top: 700vh
+.body-patch-5
+    width: 250vh
+    height: 250vh
+    right: -150vh
+    top: 900vh
+
+.spot_bg
+    position: absolute
+    // background-color: #F64D18
+    background: linear-gradient(-45deg, #ff3a24, #ff8d1b, #ff3a24, #ff8d1b, #ff3a24)
+    background-size: 300% 300%
+    animation: anim 10s ease infinite, anim-ramka-1 30s ease infinite
+    opacity: 0.5
+    filter: blur(3rem)
+.ramka-1
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #F64D18
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+    box-shadow: 15px 15px 150px #ffad4e
+    font-size: 24px
+@keyframes anim-ramka-1
+    0%
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+        box-shadow: 15px 15px 150px #ffad4e
+    25%
+        border-radius: 58% 42% 75% 25%/76% 46% 54% 24%
+    50%
+        border-radius: 50% 50% 33% 67%/55% 27% 73% 45%
+        box-shadow: 15px 15px 150px #ffad4e
+    75%
+        border-radius: 33% 67% 58% 42%/63% 68% 32% 37%
+@keyframes anim
+    0%
+        background-position: 0% 50%
+    25%
+        background-position: 0% 50%
+    50%
+        background-position: 100% 50%
+    75%
+        background-position: 0% 50%
+    100%
+        background-position: 0% 50%
+.custom_bg
+    position: absolute
+    display: flex
+    border: 1px solid #F64D18
+
+h1, h2, h3, h4 ,h5, h6
+    color: $seconday-color
+    font-family: $font-texts
+h1, h2
+    font-family: $rocgrotesk-medium-fonts
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6)
+h3, h4 ,h5, h6
+    font-family: $rocgrotesk-medium-fonts
+    font-weight: 500
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6)
+h1
+    line-height: $lh-1
+    font-size: $h1-size
+h2
+    line-height: $lh-1
+    font-size: $h2-size
+h3
+    line-height: $lh-2
+    font-size: $h3-size
+h4
+    line-height: $lh-3
+    font-size: $h4-size
+h5
+    line-height: $lh-3
+    font-size: $h5-size
+h6
+    line-height: $lh-3
+    font-size: $h6-size
+p
+    line-height: $lh-p
+    color: $white-color
+    font-family: $brother-fonts
+    a
+        color: #f64d18
+        text-decoration: none
+        line-height: $lh-p
+        font-size: 14px
+        font-family: $brother-fonts
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6)
+        font-weight: 700
+        transition: 0.2s
+        &:hover
+            color: #fff
+            text-decoration: underline
+            transition: 0.2s
+    .cta_btn
+        color: #fff !important
+a
+    font-family: $link-fonts
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6)
+.container
+    max-width: 1220px
+    position: relative
+
+.darkmode
+    color: #fff
+    a
+        color: #fff
+
+.is_onmobile
+    display: none
+.no_mobile
+    display: contents
+
+svg
+    -webkit-background-clip: text
+
+.cta_btn
+    +cta-btn
+    margin-bottom: 10px
+    display: inline-block
+    &:hover
+        +cta-btn-hover
+        color: $white-color
+.order_section
+    margin-bottom: 100px
+    .order_content
+        margin-bottom: 50px
+    .order_form
+        background: $seconday-color
+        border-radius: 19px
+        padding: 50px 65px
+        label
+            color: #fff
+        h4
+            color: #fff
+            font-weight: 700
+            font-size: $h5-size
+            line-height: $lh-4
+            margin-bottom: 20px
+        input[type=text]
+            margin-bottom: 25px !important
+            border: 1px solid #B3B3B3
+            border-radius: 20px
+            padding: 10px 20px !important
+            color: #B3B3B3
+        .gform_button
+            padding: 8px 30px
+            background: $primary-color
+            border-radius: 30px
+            color: $seconday-color
+            border: 0
+            margin: 0 auto
+            font-weight: 600
+            &:hover
+                +btn-option-hover
+        .gfield_radio
+            text-align: left
+            display: flex
+            margin-bottom: 25px
+            div
+                display: inline-block
+                margin-right: 20px
+            .gfield-choice-input+label
+                max-width: none
+        .gform_fileupload_rules, .gform_drop_instructions
+            display: none
+        #field_2_8, #field_2_9
+            display: flex
+            background: #fff
+            border-radius: 24px
+            padding: 10px 20px !important
+            text-align: left
+            margin-bottom: 25px
+            .gfield_description
+                color: #757575
+                font-size: 16px
+                font-weight: 400
+                line-height: 24px
+                padding: 0
+        .ginput_container_fileupload
+            input #file-upload-button
+                background: #333 !important
+                padding: 20px !important
+                display: block
+        .gform_drop_area
+            padding: 0
+            margin-bottom: 0
+            button
+                background: url(/wp-content/themes/miami-labs/assets/images/Download.png) 50% 50% no-repeat
+                font-size: 0
+                border: 0
+                padding: 10px 10px
+                width: 10pxpx
+                height: 10px
+.image
+    margin-bottom: 20px
+    position: relative
+    cursor: pointer
+    overflow: hidden
+    .overlay
+        position: absolute
+        bottom: 100%
+        left: 0
+        width: 100%
+        height: 0
+        background-color: $overlay
+        opacity: 0
+        transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out
+    &:hover
+        .overlay
+            opacity: 1
+            height: 100%
+            bottom: 0
+.lost_page
+    .container
+        margin-top: 100px
+        margin-bottom: 150px
+    h1
+        font-size: 300px
+        color: #DEDEDE
+        font-weight: 900
+        text-align: center
+        line-height: 363px
+    h2
+        font-size: 36px
+        line-height: 44px
+        text-align: center
+        color: $white-color
+        line-height: 44px
+        margin-bottom: 50px
+    h6
+        font-size: 24px
+    .cta_btn
+        display: block
+        width: fit-content
+    .lost_search
+        padding: 60px 0 80px 0
+        background: $seconday-color
+        border-bottom: 10px solid $primary-color
+        h6
+            color: $light-color
+            margin-bottom: 50px
+            font-weight: 300
+        .search
+            .search-field
+                padding: 10px 15px
+                border: 0
+                border-radius: 15px
+            .search-submit
+                background-size: inherit
+                background: $primary-color
+                border-radius: 30px
+                color: $light-color
+                border: 0
+                padding: 12px 25px
+
+body
+    .pum-theme-827
+        .pum-container,
+        .pum-theme-lightbox .pum-container
+            background-color: #5f5f5f
+            padding: 40px
+            border-radius: 20px
+            box-shadow: 0px 0px 20px #5f5f5f
+            border: 1px solid #333
+            width: 450px
+        .pum-title,
+        .pum-theme-lightbox .pum-title
+            color: #fff !important
+            font-family: "Roc Grotesk"
+        .pum-content,
+        .pum-theme-lightbox .pum-content
+            color: #fff !important
+        input,
+        textarea,
+        select
+            border: 0
+            padding: 10px
+            border-bottom: 1px solid #f64d18
+            font-size: 15px
+            background: #777
+            color: #fff
+            font-family: Verdana,Tahoma,sans-serif
+        textarea
+            height: 150px !important
+        .gform_footer input[type=submit]
+            border: 0
+            padding: 15px 25px !important
+            background: #777
+            border-bottom: 1px solid #f64d18
+            font-size: 16px
+            color: #fff !important
+            font-family: Verdana,Tahoma,sans-serif
+            margin-right: 20px
+            transition: .2s
+            &:hover
+                background: #515151
+                transition: .2s
+        .gform_wrapper.gravity-theme .gform_footer,
+        .gform_wrapper.gravity-theme .gform_page_footer
+            padding-bottom: 0

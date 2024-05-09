@@ -1,0 +1,57 @@
+.archive_head_section
+    position: relative
+    margin-bottom: 150px
+    .archive_head_container
+        background-size: cover
+        background-position: 50% 0%
+        padding-top: 40vw
+        padding-bottom: 10vw
+        margin-bottom: 150px
+        .center-area
+            position: relative
+        h1
+            color: $seconday-light
+            margin-bottom: 30px
+            font-size: $f1
+            line-height: 108%
+        .header_title
+            h1
+                font-weight: 700
+                font-size: 44px
+                line-height: 128.5%
+                max-width: 340px
+                margin: 0 auto
+                margin-bottom: 100px
+        .archive_head_content
+            font-weight: 600
+            font-size: 18px
+            line-height: $lh-5
+            margin-bottom: 45px
+            max-width: 590px
+            p
+                color: $light-color
+                font-family: $font-texts
+                font-weight: 400
+                font-size: 14px
+                line-height: 22px
+        a
+            +link-light
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+        .read_more_link
+            display: inline-block
+            position: relative
+            color: $light-color
+            +btn-option
+            &:hover
+                +btn-option-hover
+            &::after
+                font-family: bootstrap-icons
+                content: "\f138"
+                margin-left: 10px
+                top: 3px
+                position: relative
+            img
+                margin-left: 15px

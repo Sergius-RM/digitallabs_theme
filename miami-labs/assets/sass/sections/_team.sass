@@ -1,0 +1,53 @@
+.team_section
+    padding-bottom: 100px
+    .team_info
+        margin-bottom: 30px
+    h2
+        font-size: $f1
+        line-height: $lh-1
+        margin-bottom: 50px
+    .team-member
+        display: flex
+        margin-bottom: 20px
+        .image
+            margin-right: 20px
+            position: relative
+            overflow: hidden
+            img
+            .overlay
+                position: absolute
+                bottom: 100%
+                left: 0
+                width: 100%
+                height: 0
+                background-color: rgba(221, 67, 18, 0.58)
+                opacity: 0
+                transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out
+            &:hover
+                .overlay
+                    opacity: 1
+                    height: 100%
+                    bottom: 0
+                img
+                    filter: grayscale(1) contrast(1.5) brightness(1.3) saturate(1.5)
+        .member-designation
+            h4
+                font-size: $h5-size
+                line-height: $lh-4
+                color: $seconday-color
+            span
+                color: $white-color
+                margin-bottom: 10px
+                display: inline-block
+            .content
+                a
+                    display: block
+                    text-decoration: none
+                    color: $white-color
+                    margin-bottom: 5px
+                    transition: 0.2s
+                    i
+                        color: $seconday-color
+                    &:hover
+                        color: $seconday-color
+                        transition: 0.2s

@@ -1,0 +1,136 @@
+.contactus_section
+    margin-bottom: 150px
+    padding: 0 30px
+    .contactus_team
+        .team-member
+            .image
+                position: relative
+                overflow: hidden
+                img
+                    width: 100%
+                    border-bottom: 4px solid $seconday-color
+                    object-fit: cover
+                    transition: 0.3s
+                    max-height: 300px
+                .overlay
+                    position: absolute
+                    bottom: 100%
+                    left: 0
+                    width: 100%
+                    height: 0
+                    background-color: rgba(221, 67, 18, 0.58)
+                    opacity: 0
+                    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out
+                &:hover
+                    .overlay
+                        opacity: 1
+                        height: 100%
+                        bottom: 0
+                    img
+                        border-bottom: 4px solid #F64D1800
+                        transition: 0.3s
+                        filter: grayscale(1) contrast(1.5) brightness(1.3) saturate(1.5)
+            span
+                font-weight: 350
+                font-size: 18px
+                line-height: 26px
+                margin-bottom: 10px
+                display: block
+                font-family: $rocgrotesk-light
+            h4
+                color: $white-color
+            a
+                display: block
+                margin-bottom: 10px
+                color: $white-color
+                transition: 0.2s
+                text-decoration: none
+                font-size: 14px
+                line-height: 16px
+                &:hover
+                    text-decoration: none
+                    color: $seconday-color
+                    transition: 0.2s
+                i
+                    color: $seconday-color
+                    margin-right: 5px
+            .member-designation
+                margin-top: 10px
+    .contactus_form
+        max-width: 400px
+        margin-left: 100px
+        background: rgb(255 255 255 / 30%)
+        padding: 40px
+        border-radius: 10px
+        box-shadow: 0px 0px 20px rgba(150, 150, 150, 0.6)
+        .gform_wrapper.gravity-theme .gf_progressbar_title
+            color: #fff !important
+        .gfield
+            margin-bottom: 15px
+        .gform_title
+            display: none
+        .gform_button
+            background: $primary-color
+            border: 0
+            background: none
+            color: $seconday-color
+            transition: 0.2s
+            font-size: 18px
+            text-shadow: 1px 1px 1px #333
+            letter-spacing: 1px
+            &:hover
+                color: #fff
+                transition: 0.2s
+        input, textarea, select
+            border: 0
+            padding: 14px !important
+            border-bottom: 1px solid $seconday-color
+            font-size: 15px
+            background: none
+            color: #fff
+            font-family: Verdana, Tahoma, sans-serif
+            border-radius: 5px
+            &::placeholder
+                opacity: 1
+                color: #fff !important
+            &::focus-visible
+                box-shadow: 0
+        input, textarea, select
+            background: #777
+        select option
+            background: #fff
+        input[type=button]
+            border: 0
+            padding: 15px 25px !important
+            background: #686868 !important
+            border-bottom: 1px solid $seconday-color
+            font-size: 16px
+            background: none
+            color: #fff !important
+            font-family: Verdana, Tahoma, sans-serif
+            margin-right: 20px
+            transition: 0.2s
+        input[type=button]:hover
+            background: #777 !important
+            transition: 0.2s
+        .gform_button_select_files
+            border: 1px solid #ffffff75 !important
+            padding: 10px !important
+            background: #686868!important
+            color: #fff !important
+        select option
+            color: #333333a8
+            &::selection
+                background: cyan
+        select option:first-child
+            color: #fff !important
+    .only_contactus_form
+        max-width: 100% !important
+    .full-contacts
+        .contactus_form
+            max-width: 80%
+            margin: 0 auto
+        .contactus_team .team-member .image img
+            max-height: initial
+.gform_wrapper .gfield_required
+    color: #ff2e00 !important

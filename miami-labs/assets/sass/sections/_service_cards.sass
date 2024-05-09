@@ -1,0 +1,70 @@
+.service_card_lists_section
+    margin-bottom: 120px
+    .service_card_wrap
+        padding: 50px 0px
+        transition: 0.2s
+    .service_head
+        margin-bottom: -4vw
+        z-index: 1
+        position: relative
+        &.head-line
+            margin-bottom: 0
+    h2
+        font-size: $f1
+        line-height: 108%
+        margin-bottom: 30px
+        font-weight: 500
+        color: $white-color
+        min-height: 135px
+    .index
+        width: 80px
+        height: 80px
+        text-align: center
+        border: 1px solid $seconday-color
+        border-radius: 50%
+        color: $seconday-color
+        font-size: 4em
+        line-height: 140%
+        margin-right: 25px
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.3)
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.3)
+    img
+        margin-bottom: 25px
+        width: 100%
+        object-fit: cover
+    .service_card_content
+        margin-left: 4vw
+        .content
+            margin-bottom: 30px
+        h4
+            font-size: $f4
+            line-height: $lh-4
+            color: #282828
+            color: $white-color
+        .button_link
+            display: block
+            color: $seconday-color
+            font-weight: 600
+            background: none
+            padding: 8px 0px
+            text-decoration: none
+            transition: 0.2s
+            font-size: $f6
+            line-height: $lh-p
+            &::after
+                font-family: bootstrap-icons
+                content: "\f138"
+                margin-left: 10px
+                top: 3px
+                position: relative
+            &:hover
+                color: $white-color
+                transition: 0.2s
+    .title_large.service_card_content
+        h4
+            font-size: $f0
+            line-height: 108%
+    .title_small.service_card_content
+        h4
+            font-size: $f4
+            line-height: $lh-4

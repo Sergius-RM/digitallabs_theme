@@ -1,0 +1,94 @@
+.description_block_section
+    margin-bottom: 200px
+    overflow: hidden
+    .description_head
+        z-index: 1
+        position: relative
+        margin-bottom: 30px
+        &.above
+            margin-bottom: -4vw
+        &.over
+            margin-bottom: -12vw
+    .title-ml
+        h2
+            margin-left: 4vw
+    h2
+        margin-bottom: 30px
+        font-weight: 500
+        &.orange
+            color: $seconday-color
+        &.white
+            color: $white-color
+        &.title_large
+            font-size: $f1
+            line-height: 108%
+        &.title_small
+            font-size: $f2
+            line-height: $lh-2
+    img
+        margin-bottom: 25px
+        width: 100%
+        object-fit: cover
+    .description_block_content
+        .content
+            margin-bottom: 30px
+        h4
+            font-size: $f4
+            line-height: $lh-4
+            color: #282828
+            color: $white-color
+    .title_large
+        h4
+            font-size: $f1
+            line-height: 108%
+    // .paralax_background
+    //     height: 80vh
+    //     position: relative
+    // .paralax_box
+    //     text-align: center
+    //     display: block
+    //     width: 60%
+    //     height: 53vh
+    //     margin: 0 auto
+    //     padding-top: 7vh
+    //     iframe
+    //         width: 79vh !important
+    //         height: 53vh !important
+.parallax_background
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    perspective: 1000px
+.parallax_container
+    position: relative
+    width: 60%
+    height: 0
+    padding-bottom: 56.25%
+    overflow: hidden
+.parallax_box
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) rotateX(25deg)
+    width: 100%
+    height: 100%
+    overflow: auto
+
+.parallax_content
+    padding: 20px
+    height: 55vh
+    overflow: hidden
+    &::-webkit-scrollbar
+        width: 0
+    iframe
+        width: 74vh !important
+        height: 55vh !important
+
+@media (max-width: 768px)
+    .parallax_container
+        width: 90%
+
+@media (max-width: 480px)
+    .parallax_container
+        width: 100%

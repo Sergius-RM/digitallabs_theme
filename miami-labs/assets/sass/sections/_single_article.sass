@@ -1,0 +1,101 @@
+.blog-banner
+    position: relative
+    margin-bottom: 50px
+    .banner_overlay
+        background-color: rgba(0, 0, 0, 0.6)
+        width: 100%
+        height: 100%
+        position: absolute
+    img
+        width: 100%
+        height: 50vh
+        object-fit: cover
+.page_header_container
+    background-size: cover
+    background-position: 50% 50%
+    margin-bottom: 50px
+    padding-top: 40vw
+    padding-bottom: 10vw
+.no_padding .page_header_container
+    margin-bottom: 0px
+.blog-details-area
+    .container
+        margin-bottom: 8vw
+        .post-meta
+            margin-bottom: 15px
+        .blog-details-content
+            position: relative
+        h1
+            font-size: 68px
+            line-height: 135%
+            margin-bottom: 50px
+        h2
+            font-size: 36px
+            line-height: 42px
+            margin-top: 50px
+            margin-bottom: 20px
+        h3
+            font-size: 28px
+            line-height: 33px
+            margin-bottom: 15px
+        p
+            margin-bottom: 25px
+        .wp-block-image
+            margin: 80px 0
+            width: calc(100% + 8vw)
+            translate: -4vw
+        ul
+            padding-left: 1em
+            li
+                font-size: 16px
+                line-height: 19px
+
+        .block_infobox
+            background: $seconday-color
+            border-radius: 40px
+            padding: 50px 5vw
+            width: 100vw
+            translate: -12vw
+            margin-bottom: 50px
+            h2
+                color: $primary-color
+                font-size: $f2
+                line-height: 128.5%
+                margin-top: 0
+            h6
+                color: $light-color
+                font-size: $f4
+                line-height: 20px
+            p
+                color: #fff
+            a
+                +link-light
+                font-family: $link-fonts
+                color: $light-color
+                &:hover
+                    border-bottom: 0
+                    color: $primary-color
+            .block_infobox_btn
+                a
+                    +btn-option
+                    margin-bottom: 30px
+                    display: inline-block
+                    &:hover
+                        +btn-option-hover
+                        color: #fff
+                        text-decoration: none
+        .portfolio_infobox
+            translate: 0 !important
+        .event-details
+            margin-bottom: 15px
+            font-family: $brother-fonts
+            font-weight: 500
+            font-size: 14px
+            line-height: 21px
+            a
+                text-decoration: none
+                color: #000
+                &:hover
+                    text-decoration: underline
+            i
+                margin-right: 10px

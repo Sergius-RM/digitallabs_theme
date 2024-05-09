@@ -1,0 +1,413 @@
+.site-navigation
+    width: 100%
+    text-align: right
+    .shop_btn
+        display: inline-block
+        position: relative
+        margin-left: 40px
+        +btn-option
+        &:hover
+            +btn-option-hover
+            cursor: pointer
+        &:hover > a
+            color: $primary-color
+        a
+            color: $light-color
+            font-weight: 600
+            &::after
+                font-family: bootstrap-icons
+                content: "\f138"
+                margin-left: 10px
+                top: 3px
+                position: relative
+            &:hover
+                border-bottom: 0
+                padding-bottom: 0
+                color: $primary-color
+    ul
+        margin-bottom: 0
+        position: relative
+        li
+            display: inline-block
+            padding: 5px 15px
+            position: relative
+            a
+                text-decoration: none
+                color: #fff
+                font-family: $brother-fonts
+                padding-bottom: 5px
+                &:hover
+                    +link-hover
+                    color: $primary-color
+                    border-color: $primary-color
+
+.one_column
+    .sub-menu
+        column-count: 1 !important
+        gap: 0px !important
+.navbar-toggler:focus
+    box-shadow: none
+
+// .navbar-toggler
+//     position: absolute
+//     z-index: 999
+//     right: 40px
+//     top: 5px
+//     width: 20px
+//     height: 20px
+//     cursor: pointer
+//     background-color: transparent
+//     border: none
+// .navbar-toggler-icon
+//     display: inline-block
+//     width: 20px
+//     height: 20px
+//     position: relative
+// .navbar-toggler-line
+//     display: block
+//     width: 100%
+//     height: 4px
+//     background-color: #f64d18
+//     position: absolute
+//     transition: width 0.3s ease-in-out
+// .navbar-toggler-line:nth-child(1)
+//     top: 0
+//     right: 0
+//     width: 50%
+// .navbar-toggler-line:nth-child(2)
+//     top: 50%
+//     right: 0
+//     transform: translateY(-50%)
+//     width: 75%
+// .navbar-toggler-line:nth-child(3)
+//     bottom: 0
+//     right: 0
+//     width: 100%
+// .navbar-toggler:hover .navbar-toggler-line
+//     width: 100%
+
+// .navbar-toggler.close-btn
+//     background: url('/wp-content/themes/miami-labs/assets/images/icons/menu-close.svg') 50% 50% no-repeat
+//     background-size: cover
+//     transition: 0.5
+//     .navbar-toggler-icon
+//       display: none
+// .modal_menu
+//     +.show
+//     background: $grey-90
+//     padding: 10vw 0 0 15vw
+//     width: 100%
+//     top: 0
+//     position: fixed
+//     height: 100%
+//     overflow: scroll
+//     z-index: 90
+//     .site-navigation
+//     ul
+//         padding: 0
+//         margin-bottom: 150px
+//         li
+//             display: block
+//             list-style: none
+//             line-height: 100%
+//             a
+//                 text-decoration: none
+//                 color: $white-color
+//                 width: 100%
+//                 font-family: $rocgrotesk-medium-fonts
+//                 font-weight: 500
+//                 font-size: 62px
+//                 transition: 0.5s
+//                 border-left: 2px solid $seconday-color
+//                 padding-left: 20px
+//                 line-height: 1.3em
+//                 &:hover
+//                     border-left: 15px solid $seconday-color
+//                     transition: 0.2s
+//                     color: $seconday-color
+//                 .description
+//                     display: block
+//                     color:#808080
+//                     margin-top: 10px
+//                     font-size: 14px
+//                     font-weight: 300
+//                     font-family: Verdana, Tahoma, sans-serif
+//         .menu-item-has-children
+//            > a
+//                 color: $primary-color
+.navbar-toggler-icon
+    background-image: none
+.navbar-toggler
+    position: absolute
+    z-index: 999
+    right: 60px
+    top: 20px
+    width: 20px
+    height: 20px
+    cursor: pointer
+    background-color: transparent
+    border: none
+.navbar-toggler-icon
+    display: inline-block
+    width: 20px
+    height: 20px
+    position: relative
+.navbar-toggler-line
+    display: block
+    width: 100%
+    height: 4px
+    background-color: #f64d18
+    position: absolute
+    transition: width 0.3s ease-in-out
+.navbar-toggler-line:nth-child(1)
+    top: 0
+    right: 0
+    width: 50%
+.navbar-toggler-line:nth-child(2)
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    width: 75%
+.navbar-toggler-line:nth-child(3)
+    bottom: 0
+    right: 0
+    width: 100%
+.navbar-toggler:hover .navbar-toggler-line
+    width: 100%
+.modal_menu
+    background-color: $grey-90
+    padding: 10vw 0 0 15vw
+    width: 100%
+    top: 0
+    right: -100%
+    position: fixed
+    height: 100%
+    overflow: scroll
+    z-index: 90
+    transition: right 0.3s ease-in-out
+    > ul
+        margin-bottom: 10vh
+    ul
+        padding: 0
+        flex-direction: column !important
+        height: fit-content
+        li
+            display: block
+            list-style: none
+            line-height: 100%
+            a
+                text-decoration: none
+                color: $white-color
+                width: 100%
+                font-family: $rocgrotesk-medium-fonts
+                font-weight: 500
+                font-size: 62px
+                transition: 0.5s
+                border-left: 2px solid $seconday-color
+                padding-left: 20px
+                line-height: 1.3em
+                &:hover
+                    border-left: 15px solid $seconday-color
+                    transition: 0.2s
+                    color: $seconday-color
+                .description
+                    display: block
+                    color:#808080
+                    margin-top: 10px
+                    font-size: 14px
+                    font-weight: 300
+                    font-family: Verdana, Tahoma, sans-serif
+        .menu-item-has-children
+           > a
+                color: $primary-color
+.modal_menu.show
+    right: 0
+.site-navigation ul
+    padding: 0
+    margin-bottom: 150px
+.site-navigation li
+    display: block
+    list-style: none
+    line-height: 100%
+.site-navigation a
+    text-decoration: none
+    color: $white-color
+    width: 100%
+    font-family: $rocgrotesk-medium-fonts
+    font-weight: 500
+    font-size: 62px
+    transition: 0.5s
+    border-left: 2px solid $seconday-color
+    padding-left: 20px
+    line-height: 1.3em
+.site-navigation a:hover
+    border-left: 15px solid $seconday-color
+    transition: 0.2s
+    color: $seconday-color
+.site-navigation .description
+    display: block
+    color: #808080
+    margin-top: 10px
+    font-size: 14px
+    font-weight: 300
+    font-family: Verdana, Tahoma, sans-serif
+.menu-item-has-children > a
+    color: $primary-color
+
+.navbar-toggler.active .navbar-toggler-line:nth-child(1)
+    transform: rotate(45deg) translate(2px, 2px)
+    width: 100%
+.navbar-toggler.active .navbar-toggler-line:nth-child(2)
+    transform: rotate(-45deg) translate(1px, -1px)
+    width: 100%
+    top: 20%
+.navbar-toggler.active .navbar-toggler-line:nth-child(3)
+    opacity: 0
+    width: 100%
+
+
+.reating-arkows
+  position: relative
+
+  *
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    cursor: pointer
+
+    &:before, &:after
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      cursor: pointer
+
+  input[type="checkbox"]
+    opacity: 0
+    position: absolute
+    top: 0
+    left: 0
+
+    &[disabled] ~ label
+      pointer-events: none
+
+      .trianglesusing
+        opacity: 0.4
+
+    &:checked ~ label .trianglesusing
+      &:before
+        content: attr(data-unchecked)
+        left: 0
+
+      &:after
+        content: attr(data-checked)
+
+  label
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    position: relative
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+
+    .moresharpened
+      -webkit-flex: 1
+      -ms-flex: 1
+      flex: 1
+      padding-left: 32px
+
+    .trianglesusing
+      position: relative
+
+      &:before
+        content: attr(data-checked)
+        position: absolute
+        top: 0
+        text-transform: uppercase
+        text-align: center
+
+      &:after
+        content: attr(data-unchecked)
+        position: absolute
+        z-index: 5
+        text-transform: uppercase
+        text-align: center
+        background: $seconday-color
+        -webkit-transform: translate3d(0, 0, 0)
+        transform: translate3d(0, 0, 0)
+
+  &.zatujgdsanuk
+    input[type="checkbox"]
+      &[disabled] ~ label
+        color: rgba(68, 68, 68, 0.5)
+      &:focus ~ label .trianglesusing, &:hover ~ label .trianglesusing
+        // background-color: #444
+      &:focus ~ label .trianglesusing:after
+        color: #2b2b2b
+      &:hover ~ label
+        .trianglesusing:after
+          color: #2b2b2b
+      &:checked
+        ~ label
+          &:hover
+            color: $grey-90
+          .trianglesusing
+            background-color: $grey-90
+            border: 1px solid $seconday-color
+            &:after
+              color: $grey-90
+        &:focus ~ label .trianglesusing, &:hover ~ label .trianglesusing
+          background-color: $grey-90
+        &:focus ~ label .trianglesusing:after, &:hover ~ label .trianglesusing:after
+          color: $grey-90
+    label
+      .moresharpened
+        -webkit-flex: 1
+        -ms-flex: 1
+        flex: 1
+      .trianglesusing
+        -webkit-transition: background-color 0.3s cubic-bezier(0.86, 0, 0.07, 1)
+        transition: background-color 0.3s cubic-bezier(0.86, 0, 0.07, 1)
+        background: $grey-90
+        &:before
+            color: $seconday-color
+        &:after
+          -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1)
+          transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1)
+          color: $grey-90
+    input[type="checkbox"]
+      &:focus ~ label .trianglesusing:after, &:hover ~ label .trianglesusing:after
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4)
+      &:checked
+        ~ label .trianglesusing:after
+          -webkit-transform: translate3d(58px, 0, 0)
+          transform: translate3d(58px, 0, 0)
+        &:focus ~ label .trianglesusing:after, &:hover ~ label .trianglesusing:after
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4)
+    label
+      font-size: 13px
+      .trianglesusing
+        height: 56px
+        -webkit-flex: 0 0 150px
+        -ms-flex: 0 0 150px
+        flex: 0 0 150px
+        border-radius: 30px
+        border: 1px solid $seconday-color
+        &:before
+          left: 86px
+          font-size: 13px
+          line-height: 54px
+          width: 60px
+          padding: 0 12px
+        &:after
+          top: 2px
+          left: 2px
+          border-radius: 30px
+          width: 85px
+          line-height: 50px
+          font-size: 13px
+
+        &:hover:after
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4)
